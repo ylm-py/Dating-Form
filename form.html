@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.inside-text {
+		position: relative;
+		left:20px;
+	}
+	.sub-background{
+		background-color: whitesmoke;
+		position: absolute;
+		left:150px;
+		right:150px;
+		top:30px;
+		height: auto;
+		border-radius:30px ;
+		border:black solid;
+	}
+	body{
+		font-family: 'Arial'!important;
+		background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,57,121,1) 14%, rgba(4,147,199,1) 58%, rgba(0,212,255,1) 100%);
+	}
+	h1{
+		
+		text-align: center;
+	}
+	.sub-titles{
+		position: relative;
+		font-weight: bold;
+		font-size:18px ;
+		margin-left: 10px;
+
+	}
+	.typing-cases{
+		position: relative;
+		left:19px;
+	}
+	.radio-cases{
+		position: relative;
+		left: 10px;
+	}
+	label{
+		position: relative;
+		left:5px;
+		line-height: 45px;
+	}
+	fieldset{
+		margin:0px 20px 0px 20px;
+	}
+	.normal-box{
+		margin-bottom: 5px;
+		margin-top: 8px;
+	}
+	.choices{
+		margin-left: 12px;
+		line-height: 30px;
+	}
+	.multi-choices{
+		padding-left: 3px;
+		margin-left: 3px;
+	}
+	.essay-input{
+		width: 20%;
+		height: 120px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		font-size: 16px;
+	}
+	#second-box{
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		line-height: 10px;
+	}
+	#submit-button{
+		align-items: center;
+	}
+	button{
+		margin: .5em;
+  		font-size: 18px;
+  		text-transform: capitalize;
+  		background-color: red;
+  		color: white;
+  		border: none;
+  		padding: 5px;
+  		border-radius: 2px;
+  
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+</head>
+<body>
+	<div class = "sub-background">
+		<div><h1>Application For Permission To Date My Daughter
+		</h1></div>
+		<form action = "#">
+		<div class ="inside-text"><p><b>Note: </b>Form is to be completed at least 21 days prior to date</p></div>
+		<div>
+			<fieldset >
+				<legend>
+				<div class = "sub-titles"><p>Personal Details</p></div></legend>
+				<div>
+					<form>
+						<label for = "Name">Name :</label>
+						<input type="text" class = "typing-cases" placeholder="Enter name here"  required><br>
+						<label for = "Address">Address :</label>
+						<input type = "text" class = "typing-cases" placeholder="Enter address here"required><br>
+						<label for = "Email">Email :</label>
+						<input type = "text" class = "typing-cases" placeholder="Enter email here"required><br>
+						<label for = "Phone-number">Phone number :</label>
+						<input type = "text" class = "typing-cases" placeholder="Enter 10 digit number"required><br>
+						<label for = "IQ">IQ :</label>
+						<input type = "text" class = "typing-cases" placeholder="Enter IQ here"><br>
+						<label for = "gender">Gender:</label><br>
+						<input type = "radio" class ="radio-cases" name = "gender"required>
+						<label for = "gender" class = "choices">Male</label><br>
+						<input type = "radio" class ="radio-cases" name = "gender"required>
+						<label for = "gender"class = "choices">Female</label><br>
+						<label for="start" class = "pre-cases">Date of Proposed Outing:</label> 
+						<input type="date" name="begin" class = "typing-cases"
+							placeholder="dd-mm-yyyy" value=""
+							min="1997-01-01" max="2030-12-31"required> 
+					</form>
+				</div>
+			</fieldset>
+		</div>
+		<div class = "normal-box">
+			<fieldset>
+				<b><p>Check All That Apply</p></b><br>
+				<div id = "second-box">
+					<form>
+						<input type="checkbox" class = "radio-cases" name = "tatto">
+						<label for = "tatto" class = "choices">I have tattoos and/or piercings</label><br>
+						<input type="checkbox" class = "radio-cases" name = "age">
+						<label for = "age" class = "choices">I am more than 2 years older than my daughter</label><br>
+						<input type="checkbox" class = "radio-cases" name = "stuff">
+						<label for = "stuff"class = "choices">I own a panel van or V8 ute</label><br>
+						<input type="checkbox" class = "radio-cases" name = "work">
+						<label for = "work"class = "choices">I work full-time</label><br>
+						<input type="checkbox" class = "radio-cases" name = "status">
+						<label for = "status"class = "choices">My parents are rich</label><br>
+						<input type="checkbox" class = "radio-cases" name = "quality">
+						<label for = "quality"class = "choices">Is the date at a well lit public location</label><br>
+
+					</form>
+				</div>
+			</fieldset>
+		</div>
+		<div class = "normal-box">
+			<fieldset>
+				<form >
+					<label for = "Political-Persuasion">Political Persuasion:</label>
+						<select class = "multi-choices" name = "Political-Persuasion">
+							<option value ="Left-Wing">Left Wing</option>
+							<option value = "Right-Wing">Right Wing</option>
+							<option value = "Conservative">Conservative</option>
+							<option value = "Nazi">Nazi</option>
+						</select>
+					<label for ="Education-Level">Education Level Completed:</label>
+						<select class = "multi-choices" name ="Education-level">
+							<option value = "University">University</option>
+							<option value = "College">College</option>
+							<option value = "High school">High school</option>
+							<option value = "None">None</option>
+						</select>
+					
+				</form>
+			</fieldset>
+		</div>
+		<div>
+			<fieldset>
+				<legend>
+				<div class = "sub-titles"><p>Essay section</p></div></legend>
+				</legend>
+				<form>
+					<label for = "essay">In 50 words or more explain why you want to date my daughter</label><br>
+					<textarea id="msg" name="user_message" rows="4" cols="50" maxlength="350" placeholder="Enter Text Here"></textarea><br>
+					<label for = "contact-detail">Please upload contact details for 2 references</label><br>
+					<textarea id="msg" name="user_message" rows="4" cols="50" maxlength="350" placeholder="Enter Text Here"></textarea><br>
+				</form><br>
+				<div>
+					<p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+					<button>Attach file</button>
+					</p>
+				</div>
+
+			</fieldset>
+
+
+
+		</div>
+		<div class = "container">
+			<button id = "submit-button" type ="submit">Send Application</button>
+		</form>
+		</div>
+	</div>
+			
+
+
+</body>
+</html>
